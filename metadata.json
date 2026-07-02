@@ -1,0 +1,6 @@
+{
+  "name": "Área de Membros - Artes Bottons e Ímãs",
+  "description": "Página de entregáveis para o produto +3.000 Artes Prontas para Bottons e Ímãs",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
