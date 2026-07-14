@@ -2,22 +2,35 @@ import { motion } from "motion/react";
 import { CheckCircle2, MousePointerClick, Image as ImageIcon, Copy, PenTool, Download, ExternalLink, AlertTriangle } from "lucide-react";
 
 const packs = [
-  { id: 1, title: "Diversos", description: "Artes variadas para todas as ocasiões.", icon: "🎭", link: "https://canva.link/bylefiuxng3zloq" },
-  { id: 2, title: "Floral e Botânico", description: "Estampas florais e elementos da natureza.", icon: "🌸", link: "https://canva.link/jvx5uqtgyssm9eb" },
-  { id: 3, title: "Frases Motivacionais", description: "Frases inspiradoras e motivacionais.", icon: "⭐", link: "https://canva.link/tobzqbxz5luxpk6" },
-  { id: 4, title: "Casamentos e Eventos", description: "Artes elegantes para datas especiais.", icon: "💍", link: "https://canva.link/png4tiqv0dg6r8v" },
-  { id: 5, title: "Copa do Mundo 2026", description: "Artes temáticas para a Copa do Mundo.", icon: "🌍", link: "https://canva.link/a2ruo9v88konqi9" },
-  { id: 6, title: "Gamer (Pack 1)", description: "Artes do universo gamer e geek.", icon: "🎮", link: "https://canva.link/hiapumig8bm6k53" },
-  { id: 7, title: "Profissões", description: "Artes representativas de diversas carreiras.", icon: "💼", link: "https://canva.link/zllu88spge1l8h6" },
-  { id: 8, title: "Diversos (Pack 2)", description: "Mais opções variadas de estampas.", icon: "🎭", link: "https://canva.link/1mxkzk2bx430hr6" },
-  { id: 9, title: "Animes, Planetas, BTS...", description: "Cultura pop, K-pop e universo.", icon: "🎌", link: "https://canva.link/ewthtdnti3wrf97" },
-  { id: 10, title: "Diversos (Pack 3)", description: "Ainda mais opções para o seu catálogo.", icon: "🎭", link: "https://canva.link/2f0u2zzkclbmnq3" },
-  { id: 11, title: "Gamer (Pack 2)", description: "Expansão de artes do universo gamer.", icon: "🎮", link: "https://canva.link/t9zlbaaptq2pymo" },
-  { id: 12, title: "Animais Meme", description: "Pets divertidos e memes da internet.", icon: "🐶", link: "https://canva.link/iu164g5aoa79y22" },
-  { id: 13, title: "Guia de Impressão e Produção", description: "Instruções e dicas para imprimir e montar seus produtos.", icon: "🖨️", link: "https://drive.google.com/file/d/1n5x3BX8APwD84NWfsFog6nTJbpJ8QJ16/view?usp=sharing" },
+  { id: 1, title: "Animais Fofos", description: "Estampas super fofas e carismáticas de bichinhos.", icon: "🐱", link: "https://canva.link/uzpw90ld1jxdpur" },
+  { id: 2, title: "Animais Meme", description: "Pets divertidos, engraçados e os melhores memes da internet.", icon: "🐶", link: "https://canva.link/44pm164qyfi8hlj" },
+  { id: 3, title: "Casamento", description: "Artes elegantes e românticas para casamentos e noivados.", icon: "💍", link: "https://canva.link/jcl9jbm93txuopu" },
+  { id: 4, title: "Cristãs", description: "Artes com temas religiosos, de fé e espiritualidade.", icon: "⛪", link: "https://canva.link/z4b9rz8xzpn0ls2" },
+  { id: 5, title: "Para Colorir", description: "Desenhos incríveis prontos para colorir e personalizar.", icon: "🎨", link: "https://canva.link/5w5918nwsyxcd5i" },
+  { id: 6, title: "Copa do Mundo", description: "Estampas exclusivas para torcer na Copa do Mundo.", icon: "⚽", link: "https://canva.link/z3wwm512w1cfrhx" },
+  { id: 7, title: "Datas Comemorativas", description: "Artes especiais para o Dia das Mães, Pais, Natal e mais.", icon: "📅", link: "https://canva.link/ahjw2bt6vex9r07" },
+  { id: 8, title: "Signos", description: "Estampas astrológicas exclusivas para cada signo do zodíaco.", icon: "🔮", link: "https://canva.link/dtif0r9u0ixtpcq" },
+  { id: 9, title: "Floral & Botânico", description: "Elementos da natureza, folhagens e flores delicadas.", icon: "🌸", link: "https://canva.link/nx5al198m4gu1uq" },
+  { id: 10, title: "Gamer", description: "Artes fantásticas do universo gamer, geek e de jogos.", icon: "🎮", link: "https://canva.link/t8gwi3iwy4lzmst" },
+  { id: 11, title: "Frases Motivacionais", description: "Frases inspiradoras para dar um up no dia a dia.", icon: "⭐", link: "https://canva.link/kpnd7nec1tzvdxm" },
+  { id: 12, title: "Nomes de Menino e Menina", description: "Artes personalizadas com nomes masculinos e femininos.", icon: "👦", link: "https://canva.link/mha1w2y5i066o8u" },
+  { id: 13, title: "Profissões", description: "Artes representativas de diversas carreiras e profissões.", icon: "💼", link: "https://canva.link/c2ux05lhipabcnl" },
+  { id: 14, title: "Sanrio", description: "Artes fofas inspiradas nos personagens clássicos da Sanrio.", icon: "🎀", link: "https://canva.link/2vl4wcfirs67jxr" },
+  { id: 15, title: "Diversos", description: "Estampas variadas de alta qualidade para todos os públicos.", icon: "🎭", link: "https://canva.link/mkxowcbhpwz7xi8" },
+  { id: 16, title: "Versículos", description: "Versículos bíblicos inspiradores para carregar com você.", icon: "📜", link: "https://canva.link/cejj0lkuufyeus2" },
+  { id: 17, title: "Diversos 2", description: "Mais opções variadas e criativas para o seu catálogo.", icon: "✨", link: "https://canva.link/gak6s7z8dofketr" },
 ];
 
-const bonuses = [
+interface BonusItem {
+  id: number;
+  title: string;
+  description: string;
+  icon: string;
+  link: string;
+  download?: boolean;
+}
+
+const bonuses: BonusItem[] = [
   { id: 1, title: "Kit Gabaritos para Máquinas de Ímãs e Bottons", description: "Apresente seus bottons e ímãs de forma profissional nas redes sociais.", icon: "🖼️", link: "#" },
   { id: 2, title: "Planilha de Custos e Precificação", description: "Aprenda a calcular seus custos e definir o preço ideal de venda.", icon: "💰", link: "https://docs.google.com/spreadsheets/d/1rH7fEgoVg6xF5HEZhZn9kZ3AI6Ua05sc/edit?usp=sharing&ouid=117444708865396527734&rtpof=true&sd=true" },
   { id: 3, title: "Scripts para Fechar Vendas no WhatsApp", description: "10 modelos prontos para artesãos copiarem e colarem.", icon: "🚀", link: "https://drive.google.com/file/d/1GEdpm8uQdAJkPliZVdMl6mdS80KGXz6j/view?usp=sharing" },
@@ -74,6 +87,41 @@ export default function App() {
       </motion.header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        {/* Como Acessar Section */}
+        <motion.section
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-16 bg-[#F0F5FF] rounded-3xl p-8 md:p-12"
+        >
+          <div className="text-center mb-10 flex flex-col items-center">
+            <h2 className="text-2xl font-bold text-slate-900 mb-2">Como acessar os arquivos</h2>
+            <p className="text-slate-500 mb-4">Siga estes passos simples para começar a editar</p>
+            <div className="inline-flex items-center gap-2 bg-red-50 border border-red-200 text-red-700 px-5 py-3 rounded-2xl text-sm font-bold shadow-sm max-w-xl text-center">
+              <AlertTriangle className="w-5 h-5 text-red-600 flex-shrink-0 animate-bounce" />
+              <span>⚠️ ATENÇÃO: Você DEVE fazer uma cópia do arquivo no seu Canva. Se você não fizer isso, NÃO VAI FUNCIONAR!</span>
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {steps.map((step, index) => (
+              <div 
+                key={index} 
+                className={`flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-sm border border-blue-50/50 hover:border-blue-100 transition-all duration-200 ${
+                  index === 4 ? "md:col-span-2 md:max-w-md md:mx-auto w-full" : ""
+                }`}
+              >
+                <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 mb-4">
+                  <step.icon className="w-6 h-6" />
+                </div>
+                <div className="text-blue-600 font-semibold mb-1">Passo {index + 1}</div>
+                <p className="text-sm text-slate-600 font-medium">{step.text}</p>
+              </div>
+            ))}
+          </div>
+        </motion.section>
+
         {/* Packs Grid */}
         <motion.div
           variants={containerVariants}
@@ -86,13 +134,14 @@ export default function App() {
               key={pack.id}
               variants={itemVariants}
               whileHover={{ y: -4, transition: { duration: 0.2 } }}
-              className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-200 transition-all duration-300 flex flex-col h-full"
+              className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-200 transition-all duration-300 flex flex-col h-full justify-between"
             >
-              <div className="text-4xl mb-4 bg-slate-50 w-16 h-16 rounded-xl flex items-center justify-center shadow-inner">
-                {pack.icon}
+              <div>
+                <div className="text-4xl mb-4 bg-slate-50 w-16 h-16 rounded-xl flex items-center justify-center shadow-inner">
+                  {pack.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-slate-900 mb-6">{pack.title}</h3>
               </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-2">{pack.title}</h3>
-              <p className="text-sm text-slate-500 mb-8 flex-grow">{pack.description}</p>
               <a
                 href={pack.link}
                 target="_blank"
@@ -148,36 +197,6 @@ export default function App() {
                   <ExternalLink className="w-4 h-4 ml-2 opacity-70 group-hover:opacity-100 transition-opacity" />
                 </a>
               </motion.div>
-            ))}
-          </div>
-        </motion.section>
-
-        {/* Como Acessar Section */}
-        <motion.section
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mt-24 bg-[#F0F5FF] rounded-3xl p-8 md:p-12"
-        >
-          <div className="text-center mb-10">
-            <h2 className="text-2xl font-bold text-slate-900 mb-2">Como acessar os arquivos</h2>
-            <p className="text-slate-500">Siga estes passos simples para começar a editar</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
-            {steps.map((step, index) => (
-              <div key={index} className="flex flex-col items-center text-center relative">
-                <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-blue-600 shadow-sm mb-4 relative z-10">
-                  <step.icon className="w-6 h-6" />
-                </div>
-                <div className="text-blue-600 font-semibold mb-1">Passo {index + 1}</div>
-                <p className="text-sm text-slate-600 font-medium">{step.text}</p>
-                {/* Connector line for desktop */}
-                {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-7 left-[60%] w-full h-[2px] bg-blue-200/50 -z-0"></div>
-                )}
-              </div>
             ))}
           </div>
         </motion.section>
