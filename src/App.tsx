@@ -31,9 +31,12 @@ interface BonusItem {
 }
 
 const bonuses: BonusItem[] = [
-  { id: 1, title: "Kit Gabaritos para Máquinas de Ímãs e Bottons", description: "Apresente seus bottons e ímãs de forma profissional nas redes sociais.", icon: "🖼️", link: "#" },
-  { id: 2, title: "Planilha de Custos e Precificação", description: "Aprenda a calcular seus custos e definir o preço ideal de venda.", icon: "💰", link: "https://docs.google.com/spreadsheets/d/1rH7fEgoVg6xF5HEZhZn9kZ3AI6Ua05sc/edit?usp=sharing&ouid=117444708865396527734&rtpof=true&sd=true" },
-  { id: 3, title: "Scripts para Fechar Vendas no WhatsApp", description: "10 modelos prontos para artesãos copiarem e colarem.", icon: "🚀", link: "https://drive.google.com/file/d/1GEdpm8uQdAJkPliZVdMl6mdS80KGXz6j/view?usp=sharing" },
+  { id: 1, title: "Artes de Profissões", description: "Artes de alta qualidade para diversas carreiras.", icon: "💼", link: "https://canva.link/c2ux05lhipabcnl" },
+  { id: 2, title: "Artes Gamer", description: "Estampas dinâmicas do universo dos jogos.", icon: "🎮", link: "https://canva.link/t8gwi3iwy4lzmst" },
+  { id: 3, title: "Artes Cristãs", description: "Artes inspiradoras de fé e espiritualidade.", icon: "⛪", link: "https://canva.link/z4b9rz8xzpn0ls2" },
+  { id: 4, title: "Como Criar Suas Próprias Artes com ChatGPT", description: "Aprenda a utilizar inteligência artificial para criar artes incríveis.", icon: "🤖", link: "https://drive.google.com/file/d/1HGN5mfoUQkm7IevB56vMtavJd8JEafY3/view?usp=sharing" },
+  { id: 5, title: "Planilha de Custos e Precificação", description: "Aprenda a calcular seus custos e definir o preço ideal de venda.", icon: "💰", link: "https://docs.google.com/spreadsheets/d/1rH7fEgoVg6xF5HEZhZn9kZ3AI6Ua05sc/edit?usp=sharing&ouid=117444708865396527734&rtpof=true&sd=true" },
+  { id: 6, title: "Scripts para Fechar Vendas no WhatsApp", description: "10 modelos prontos para artesãos copiarem e colarem.", icon: "🚀", link: "https://drive.google.com/file/d/1GEdpm8uQdAJkPliZVdMl6mdS80KGXz6j/view?usp=sharing" },
 ];
 
 const steps = [
@@ -179,13 +182,14 @@ export default function App() {
                 key={bonus.id}
                 variants={itemVariants}
                 whileHover={{ y: -4, transition: { duration: 0.2 } }}
-                className="bg-gradient-to-br from-indigo-50 to-white rounded-2xl p-6 border border-indigo-100 shadow-sm hover:shadow-md hover:border-indigo-300 transition-all duration-300 flex flex-col h-full"
+                className="bg-gradient-to-br from-indigo-50 to-white rounded-2xl p-6 border border-indigo-100 shadow-sm hover:shadow-md hover:border-indigo-300 transition-all duration-300 flex flex-col h-full justify-between"
               >
-                <div className="text-4xl mb-4 bg-white w-16 h-16 rounded-xl flex items-center justify-center shadow-sm border border-indigo-50">
-                  {bonus.icon}
+                <div>
+                  <div className="text-4xl mb-4 bg-white w-16 h-16 rounded-xl flex items-center justify-center shadow-sm border border-indigo-50">
+                    {bonus.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold text-slate-900 mb-6">{bonus.title}</h3>
                 </div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-2">{bonus.title}</h3>
-                <p className="text-sm text-slate-500 mb-8 flex-grow">{bonus.description}</p>
                 <a
                   href={bonus.link}
                   target="_blank"
